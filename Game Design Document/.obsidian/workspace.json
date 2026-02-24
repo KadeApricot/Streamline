@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Building/Towers.md",
+                "file": "Gacha systems/Classic pool.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Towers"
+              "title": "Classic pool"
             }
           }
         ]
@@ -75,7 +75,7 @@
             }
           },
           {
-            "id": "41f9c1bbc232b097",
+            "id": "dd0fc4f9ca7705e1",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -201,37 +201,38 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Building/Hall.md",
+    "Gacha systems/Pools.md",
+    "Gacha systems/Classic pool.md",
+    "Overview.md",
+    "Untitled.canvas",
+    "Gacha systems/Gacha systems.md",
+    "Tower Defense Systems/Sachs.md",
+    "Gacha systems/.md",
+    "Tower Defense Systems/Alfred.md",
+    "Tower Defense Systems/Blackburn.md",
+    "Tags",
     "Building/Towers.md",
+    "Building/Hall.md",
     "Building/Buildings.md",
     "Building/Grid.md",
-    "Tower Defense Systems/Sachs.md",
     "Tower Defense Systems/Margulis.md",
     "Tower Defense Systems/Margulis Lynn.md",
     "Tower Defense Systems/Milstein.md",
     "Tower Defense Systems/Intercept.md",
-    "Untitled.canvas",
-    "Gacha systems/Untitled.md",
-    "Gacha systems/Gacha systems.md",
     "Currencies/Currencies.md",
     "Currencies/Neural Nodes.md",
     "Currencies/Trajectory Scrip.md",
     "Gacha systems",
     "Materials/Materials.md",
     "Currencies",
-    "Tower Defense Systems/Alfred.md",
     "Level systems/Level systems.md",
     "Vault.md",
     "Automation Systems/Automation Systems.md",
     "Level systems",
-    "Tower Defense Systems/Blackburn.md",
     "Processing Systems/Processing Systems.md",
     "ConceptArt/concept5/concept.ase",
     "Materials/Tier 3/Magnetic coil.md",
     "Materials/Tier 3/Circuit board.md",
-    "Materials/Tier 1/Biomass.md",
-    "Automation Systems/Materials/Tier 0/Tier 0.md",
-    "Automation Systems/Materials/Tier 5/Tier 5.md",
     "ConceptArt/concept5/radar.png",
     "ConceptArt/concept5/radar.ase",
     "ConceptArt/concept5/ingots.ase",
@@ -239,7 +240,6 @@
     "ConceptArt/concept5/drill.png",
     "ConceptArt/concept5/drill.ase",
     "ConceptArt/concept5",
-    "ConceptArt/New folder",
     "ConceptArt/radar.png",
     "ConceptArt/drill.png",
     "radar.png",

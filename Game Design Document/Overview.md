@@ -1,3 +1,13 @@
+---
+aliases: [Overview]
+tags: []
+title: Overview
+linter-yaml-title-alias: Overview
+date created: Saturday, January 24th 2026, 9:34:41 am
+date modified: Tuesday, February 24th 2026, 11:27:54 am
+---
+
+# Overview
 
 ---
 
@@ -120,7 +130,7 @@ Every tower utilizes one of these aiming logics:
 
 Enemies move strictly along X/Y axes (Manhattan distance pathfinding).
 
-#### Classes:
+#### Classes
 
 ### 6. Defensive Structures (Walls)
 

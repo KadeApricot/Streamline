@@ -1,0 +1,1 @@
+Pool containing classic, essential towers

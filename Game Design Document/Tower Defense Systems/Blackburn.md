@@ -4,7 +4,7 @@ tags: []
 title: Blackburn
 linter-yaml-title-alias: Blackburn
 date created: Friday, February 20th 2026, 4:07:00 pm
-date modified: Monday, February 23rd 2026, 8:32:22 am
+date modified: Tuesday, February 24th 2026, 8:40:32 am
 ---
 
 # Blackburn
@@ -13,7 +13,7 @@ date modified: Monday, February 23rd 2026, 8:32:22 am
 
 - A defensive tower
 
-## 2. Attack Pattern
+## 2. Statistics
 
 - Health: 1200 HP
 - Defense: 80 DEF
