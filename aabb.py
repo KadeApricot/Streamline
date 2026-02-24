@@ -1,4 +1,4 @@
 import shape as shape
 
-class Rect(shape.Shape):
+class AABB(shape.Shape):
     pass
