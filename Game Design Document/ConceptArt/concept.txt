@@ -1,0 +1,164 @@
+-----
+
+Idea & Scope
+Genre: Tower defense + Automation, Level-based
+Art style: Techy, sci-fi
+Gameplay needs:
+- Satisfy constant combat and drama for tower defense players
+- While still maintaining reasonable breaks for automation players
+- Mechanics support complex material processing for automation players
+Platform targets: Windows
+Technical constraints:
+- CPU based rendering
+- Low memory and processing performance
+
+-----
+
+Game design document
+
+Gameplay loop:
+- Level-based, sequential order with extra sidequests
+- The board is a grid
+- Enemies move with the y and x axis
+- Gameplay heavily relies on problem-solving
+- Phase 1: You start by building a factory
+- After phase 1:
+	- The enemies start spawning after some time
+	- At this point, the factory starts operating
+	- And the player can also extend their factory or building towers
+- Phase 2 have 2 modes alternatively: charge and haste:
+	- Charge mode is slow, the player can collect resources during this tie
+	- Haste mode is dramatic, organized attacks aimed to destroy the player's buildings.
+
+Mines:
+- Contains resources
+- Medium health
+
+Storage:
+- Automatically collect Mines in a certain radius
+- Storage can transport its items in 4 directions
+- Costs more than Belts
+- High health
+
+Belts:
+- Belts can transport its items from 1 direction to the opposite
+- Medium health
+
+Hall:
+- Materials stored inside the hall can be used to build Buildings
+- Very high health
+
+Towers:
+- Towers can be bought by the materials gathered by Hall
+	- Towers have buying cooldown
+- Towers can be placed on belts
+- Towers can, includes but not limited to, attack, heal itself and buff other Towers:
+	- Towers have 2 tiers, which has special effects and buffs
+- Towers can be merged to create another type of Tower with a cost of material (POTENTIAL IDEA, NOT PLANNED YET)
+	- Merged towers of the same type will have summed tiers
+	- Merged towers of different types will have max tiers of the towers
+
+Lootboxes:
+- Contains Coins which can be used to buy in Shop
+- Or contains Usables which can be activated manually by the player
+- Drop as a random or set Event
+
+Usables:
+- Usables are tools the player can use to manipulate the game field
+
+Delivery methods:
+- All devivery methods have a range attribute to scale effective range
+- Axis:
+	- Fire projects in a set axis
+- Lob:
+	- Fire projectiles into the air and drop it on the ground in a donut radius
+	- Have hang time
+	- Have inaccuracy to encourage the use of Axis and Salvo
+- Salvo:
+	- Fire projectiles in the position that the player commands
+	- Range is restricted in specific shapes
+	- Has a charge up animation when the player select a position so they have to plan up
+- Jack:
+	- Moves in a direction set by the player every few ticks
+	- Bounces off contact with wall
+	- Deals effects to entities in a 3x3 area around the tower when move
+	- Can connect to each other
+
+Tower classes:
+- Swight:
+	- Deals damage
+- Charge:
+	- Deals knockback or stun
+- Engine:
+	- Increase firerate and damage of ally towers
+- Drup:
+	- Retrigger the effects of affected ally towers
+	- Subclasses:
+		- Echo:
+			- Delivery: Jack
+			- Effect: Leaves a trail for 1s that retriggers ally towers in a 3x3 range once after the trail ends
+
+Towers:
+- Rifle:
+	- Class: Swight
+	- Low firerate
+	- High damage
+	- Target strongest enemy
+- Cluster:
+	- Class: Swight
+	- On impact, split into 3 smaller projectiles that scatters out
+	- Low damage
+	- Low firerate
+	- Target weakest enemy
+- Gravnet:
+	- Class: Charge
+	- Inspiration: Netted melon
+	- Delivery: Axis or Salvo
+	- Fire projectiles that, on impact, pulls enemies towards the center of the impact
+	- High firerate
+	- Low damage
+- Grapeshot:
+	- Class: Charge
+	- Inspiration: Grape
+	- Delivery: Axis or Salvo
+	- Fire projectiles that, on impact, pushes enemies away from the center of the impact
+	- Medium firerate
+	- High damage
+
+Walls:
+- Walnut:
+	- 1-tile wall
+	- Medium cooldown
+	- High health
+- Pealet:
+	- A 3-tile wall
+	- Medium cooldown
+	- Medium health
+
+Enemies classes:
+- Sickle:
+	- Target Hall
+- Swarm:
+	- Fast
+	- Low health
+	- Comes in group
+- Siege:
+	- Target Walls
+	- Subclasses:
+		- Ram:
+			- High health
+			- Low movement
+		- Ballista:
+			- Immovable
+			- High attack speed
+		- Rambalist:
+			- Has stats of both Ram and Ballista, although for movement it's Immovable
+			- Short range
+			- Extra damage to Walls and Hall
+
+Map elements:
+- Chasms:
+	- Jack towers can't move over them
+	- Ground enemies can't move over them
+	- Lob projectiles can move over them
+	- Air enemies can walk over them

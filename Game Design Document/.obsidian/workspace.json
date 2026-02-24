@@ -1,0 +1,253 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Building/Towers.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Towers"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c692ce50ef645da6",
+    "type": "split",
+    "children": [
+      {
+        "id": "91983cb47110c580",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e5b016cb7ebe73e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b225bad01b85cbbf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6c044d871e36d0ca",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "41f9c1bbc232b097",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {},
+              "icon": "layout-grid",
+              "title": "Navigator"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2b5435dba803a281",
+    "type": "split",
+    "children": [
+      {
+        "id": "f171eff9e4562c5d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0555bd4a3b0aac71",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Basic concepts.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Basic concepts"
+            }
+          },
+          {
+            "id": "84c457ff483e9f98",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Basic concepts.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Basic concepts"
+            }
+          },
+          {
+            "id": "3e13b88ce7aef58d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3a7e7ea6f1bb831e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "05a2f27fae1ecdfa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Basic concepts.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Basic concepts"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "publish:Publish changes...": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "homepage:Open homepage": false,
+      "pomodoro-timer:Toggle timer panel": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "Building/Hall.md",
+    "Building/Towers.md",
+    "Building/Buildings.md",
+    "Building/Grid.md",
+    "Tower Defense Systems/Sachs.md",
+    "Tower Defense Systems/Margulis.md",
+    "Tower Defense Systems/Margulis Lynn.md",
+    "Tower Defense Systems/Milstein.md",
+    "Tower Defense Systems/Intercept.md",
+    "Untitled.canvas",
+    "Gacha systems/Untitled.md",
+    "Gacha systems/Gacha systems.md",
+    "Currencies/Currencies.md",
+    "Currencies/Neural Nodes.md",
+    "Currencies/Trajectory Scrip.md",
+    "Gacha systems",
+    "Materials/Materials.md",
+    "Currencies",
+    "Tower Defense Systems/Alfred.md",
+    "Level systems/Level systems.md",
+    "Vault.md",
+    "Automation Systems/Automation Systems.md",
+    "Level systems",
+    "Tower Defense Systems/Blackburn.md",
+    "Processing Systems/Processing Systems.md",
+    "ConceptArt/concept5/concept.ase",
+    "Materials/Tier 3/Magnetic coil.md",
+    "Materials/Tier 3/Circuit board.md",
+    "Materials/Tier 1/Biomass.md",
+    "Automation Systems/Materials/Tier 0/Tier 0.md",
+    "Automation Systems/Materials/Tier 5/Tier 5.md",
+    "ConceptArt/concept5/radar.png",
+    "ConceptArt/concept5/radar.ase",
+    "ConceptArt/concept5/ingots.ase",
+    "ConceptArt/concept5/fluid_pipe.ase",
+    "ConceptArt/concept5/drill.png",
+    "ConceptArt/concept5/drill.ase",
+    "ConceptArt/concept5",
+    "ConceptArt/New folder",
+    "ConceptArt/radar.png",
+    "ConceptArt/drill.png",
+    "radar.png",
+    "drill.png",
+    "Automation Systems/Materials/Recipe Tree.canvas",
+    "ObsidianImages/Pasted Image 20260121133059_363.png",
+    "ObsidianImages/Pasted Image 20260121132147_384.png",
+    "ObsidianImages/Pasted Image 20260121132247_502.png",
+    "ObsidianImages/Pasted Image 20260121132737_542.png"
+  ]
+}

@@ -1,0 +1,1 @@
+- Motor + Transmission box + Circuit board
