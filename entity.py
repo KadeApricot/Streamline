@@ -1,5 +1,7 @@
 class Entity:
-    def __init__(self, name : str = 'test_entity', components : dict[str, object] = {}):
+    def __init__(self, name : str = 'test_entity', tags : set[str] = {}, components : dict[str, object] = {}):
+        self.name = name
+        self.tags = tags
         self.components = components
     
     def add_component(self, component):
