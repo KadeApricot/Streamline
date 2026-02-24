@@ -13,6 +13,11 @@ class Entity:
         if cls.__name__ in self.components:
             return True
         return False
+
+    def get_component(self, cls):
+        if self.has_component(cls):
+            return self.components[cls.__name__]
+        return None
     
     def remove_component(self, cls):
         name = cls.__name__
