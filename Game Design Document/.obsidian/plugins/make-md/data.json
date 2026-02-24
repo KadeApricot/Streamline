@@ -54,7 +54,8 @@
     "//Automation Systems",
     "//Usables",
     "//Gacha systems",
-    "//Tower Defense Systems"
+    "//Tower Defense Systems",
+    "//Currencies"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

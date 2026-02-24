@@ -4,7 +4,7 @@ tags: []
 title: Margulis Lynn
 linter-yaml-title-alias: Margulis Lynn
 date created: Monday, February 23rd 2026, 9:37:47 am
-date modified: Monday, February 23rd 2026, 1:21:23 pm
+date modified: Tuesday, February 24th 2026, 11:36:01 am
 ---
 
 # Margulis Lynn

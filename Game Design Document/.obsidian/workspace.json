@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Gacha systems/Classic pool.md",
+                "file": "Gacha systems/Mekannik pool.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Classic pool"
+              "title": "Mekannik pool"
             }
           }
         ]
@@ -201,12 +201,16 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Gacha systems/Pools.md",
+    "Gacha systems/Vanilla Extra pool.md",
+    "Gacha systems/Mekannik pool.md",
     "Gacha systems/Classic pool.md",
+    "Tower Defense Systems/Margulis Lynn.md",
+    "Tower Defense Systems/Milstein.md",
+    "Tower Defense Systems/Sachs.md",
+    "Gacha systems/Gacha systems.md",
+    "Gacha systems/Pools.md",
     "Overview.md",
     "Untitled.canvas",
-    "Gacha systems/Gacha systems.md",
-    "Tower Defense Systems/Sachs.md",
     "Gacha systems/.md",
     "Tower Defense Systems/Alfred.md",
     "Tower Defense Systems/Blackburn.md",
@@ -216,8 +220,6 @@
     "Building/Buildings.md",
     "Building/Grid.md",
     "Tower Defense Systems/Margulis.md",
-    "Tower Defense Systems/Margulis Lynn.md",
-    "Tower Defense Systems/Milstein.md",
     "Tower Defense Systems/Intercept.md",
     "Currencies/Currencies.md",
     "Currencies/Neural Nodes.md",
@@ -231,8 +233,6 @@
     "Level systems",
     "Processing Systems/Processing Systems.md",
     "ConceptArt/concept5/concept.ase",
-    "Materials/Tier 3/Magnetic coil.md",
-    "Materials/Tier 3/Circuit board.md",
     "ConceptArt/concept5/radar.png",
     "ConceptArt/concept5/radar.ase",
     "ConceptArt/concept5/ingots.ase",
