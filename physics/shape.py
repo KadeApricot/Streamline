@@ -1,10 +1,10 @@
 from typing import Self, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    import entity as entity
-    import hitbox as hitbox
+    import entities.entity as entity
+    import physics.hitbox as hitbox
 
-import component as component
+import entities.component as component
 
 class Shape(component.Component):
     def __init__(self, offset : tuple[float, float], objects : list[entity.Entity] = []):
