@@ -1,4 +1,4 @@
-import entity as entity
+import entities.entity as entity
 
 class Scene:
     def __init__(self, entities : dict[str, entity.Entity]):

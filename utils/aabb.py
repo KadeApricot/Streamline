@@ -1,5 +1,5 @@
-import shape as shape
-import transform as transform
+import physics.shape as shape
+import entities.transform as transform
 
 class AABB(shape.Shape):
     def __init__(self, float, w : float, h : float):

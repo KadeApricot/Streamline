@@ -1,7 +1,7 @@
 import pygame as pg
-import scene_manager as scene_manager
-import scene as scene
-import entity as entity
+import core.scene_manager as scene_manager
+import core.scene as scene
+import entities.entity as entity
 
 class Main:
     def __init__(self):

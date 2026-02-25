@@ -1,4 +1,4 @@
-import scene as scene
+import core.scene as scene
 
 class SceneManager:
     def __init__(self, scenes : dict[str, scene.Scene] = {}, current_scene : str = None):

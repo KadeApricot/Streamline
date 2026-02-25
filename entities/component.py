@@ -1,7 +1,7 @@
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    import entity as entity
+    import entities.entity as entity
 
 class Component:
     def __init__(self):

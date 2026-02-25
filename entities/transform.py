@@ -1,4 +1,4 @@
-import component as component
+import entities.component as component
 from pygame.math import Vector2
 
 class Transform(component.Component):

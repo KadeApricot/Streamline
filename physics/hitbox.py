@@ -1,9 +1,9 @@
-import component as component
+import entities.component as component
 
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    import entity as entity
+    import entities.entity as entity
 
 class Hitbox(component.Component):
     def __init__(self, shapes : list[object]):
