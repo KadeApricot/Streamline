@@ -6,9 +6,17 @@ if TYPE_CHECKING:
     import entities.entity as entity
 
 class Hitbox(component.Component):
-    def __init__(self, shapes : list[object]):
+    def __init__(self, shapes : list[object], objects : list[object]):
+        super().__init__()
         self.shapes = shapes
+        self.objects = objects
+        for shape in self.shapes:
+            shape.objects = objects
     
     def set_entity(self, entity : entity.Entity):
         for shape in self.shapes:
             shape.entity = entity
+    
+    def tick(self, delta : float):
+        for shape in self.shapes:
+            shape.tick(delta)

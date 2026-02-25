@@ -1,3 +1,8 @@
+from typing import Union, Optional, Type, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    import component as component
+
 class Entity:
     def __init__(self, name : str = 'test_entity', tags : set[str] = {}, components : dict[str, object] = {}):
         self.name = name
@@ -8,18 +13,13 @@ class Entity:
         name = type(component).__name__
         self.components[name] = component
         setattr(self, name, component)
-    
-    def has_component(self, cls):
-        if cls.__name__ in self.components:
-            return True
-        return False
 
-    def get_component(self, cls):
+    def get_component(self, cls : Type[component.ComponentT]) -> Optional[component.ComponentT]:
         if self.has_component(cls):
             return self.components[cls.__name__]
         return None
     
-    def remove_component(self, cls):
+    def remove_component(self, cls : type):
         name = cls.__name__
         if name in self.components:
             self.components.pop(name)
