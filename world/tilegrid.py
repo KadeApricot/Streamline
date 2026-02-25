@@ -11,10 +11,13 @@ class TileGrid:
         print(self.level)
 
     def display_level(self):
-        for i in range(self.width):
-            pass
+        for i in range(self.height):
+            for j in range(self.width):
+                print(self.level[i][j], end=" ")
+            print()
 
 
 
 tile_grid = TileGrid()
-tile_grid.generate_level(4, 7)
+tile_grid.generate_level(50, 20)
+tile_grid.display_level()
