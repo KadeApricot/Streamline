@@ -1,3 +1,5 @@
+from typing import Union
+
 class Entity:
     def __init__(self, name : str = 'test_entity', tags : set[str] = {}, components : dict[str, object] = {}):
         self.name = name
@@ -8,19 +10,14 @@ class Entity:
         name = type(component).__name__
         self.components[name] = component
         setattr(self, name, component)
-    
-    def has_component(self, cls):
-        if cls.__name__ in self.components:
-            return True
-        return False
 
-    def get_component(self, cls):
+    def get_component(self, cls : Union[type, str]):
         if self.has_component(cls):
-            return self.components[cls.__name__]
+            return self.components[cls.__name__ if isinstance(cls, type) else cls]
         return None
     
-    def remove_component(self, cls):
-        name = cls.__name__
+    def remove_component(self, cls : Union[type, str]):
+        name = cls.__name__ if isinstance(cls, type) else cls
         if name in self.components:
             self.components.pop(name)
             delattr(self, name)
