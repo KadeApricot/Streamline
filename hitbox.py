@@ -7,6 +7,7 @@ if TYPE_CHECKING:
 
 class Hitbox(component.Component):
     def __init__(self, shapes : list[object], objects : list[object]):
+        super().__init__()
         self.shapes = shapes
         self.objects = objects
         for shape in self.shapes:

@@ -1,4 +1,7 @@
-from typing import Union
+from typing import Union, Optional, Type, TYPE_CHECKING
+
+if TYPE_CHECKING:
+    import component as component
 
 class Entity:
     def __init__(self, name : str = 'test_entity', tags : set[str] = {}, components : dict[str, object] = {}):
@@ -11,13 +14,13 @@ class Entity:
         self.components[name] = component
         setattr(self, name, component)
 
-    def get_component(self, cls : Union[type, str]):
+    def get_component(self, cls : Type[component.ComponentT]) -> Optional[component.ComponentT]:
         if self.has_component(cls):
-            return self.components[cls.__name__ if isinstance(cls, type) else cls]
+            return self.components[cls.__name__]
         return None
     
-    def remove_component(self, cls : Union[type, str]):
-        name = cls.__name__ if isinstance(cls, type) else cls
+    def remove_component(self, cls : type):
+        name = cls.__name__
         if name in self.components:
             self.components.pop(name)
             delattr(self, name)

@@ -2,13 +2,15 @@ from typing import Self, TYPE_CHECKING
 
 if TYPE_CHECKING:
     import entity as entity
+    import hitbox as hitbox
 
 import component as component
 
 class Shape(component.Component):
-    def __init__(self, offset : tuple[float, float], objects : list[object] = []):
+    def __init__(self, offset : tuple[float, float], objects : list[entity.Entity] = []):
+        super().__init__()
         self.offset = offset
-        self.objects : list[object] = objects
+        self.objects = objects
 
     def get_mtv(self, other : Self):
         raise NotImplementedError()
@@ -16,8 +18,8 @@ class Shape(component.Component):
     def get_mtv_multi(self):
         mtvs = []
         for obj in self.objects:
-            if obj is not self and hasattr(obj, 'hitbox'):
-                for shape in obj.hitbox.shapes:
+            if obj is not self and (hitbox_comp := obj.get_component(hitbox.Hitbox)):
+                for shape in hitbox_comp.shapes:
                     if shape is not self:
                         mtv = self.get_mtv(shape)
                         if mtv is not None:
