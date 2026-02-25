@@ -1,7 +1,7 @@
 from typing import Union, Optional, Type, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    import component as component
+    import entities.component as component
 
 class Entity:
     def __init__(self, name : str = 'test_entity', tags : set[str] = {}, components : dict[str, object] = {}):

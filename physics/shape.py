@@ -1,10 +1,11 @@
 from typing import Self, TYPE_CHECKING
 
 if TYPE_CHECKING:
-    import entity as entity
+    import entities.entity as entity
     import hitbox as hitbox
 
-import component as component
+import entities.component as component
+import entities.transform as transform
 
 class Shape(component.Component):
     def __init__(self, offset : tuple[float, float], objects : list[entity.Entity] = []):
@@ -29,5 +30,5 @@ class Shape(component.Component):
         return (sum(mtv[0] for mtv in mtvs) / len(mtvs), sum(mtv[1] for mtv in mtvs) / len(mtvs))
 
     def tick(self, delta : float):
-        if (transform := self.entity.get_component('Transform')) and (mtv := self.get_mtv_multi()):
-            transform.position = (transform.position[0] + mtv[0], transform.position[1] + mtv[1])
+        if (transform_comp := self.entity.get_component(transform.Transform)) and (mtv := self.get_mtv_multi()):
+            transform_comp.position = (transform_comp.position[0] + mtv[0], transform_comp.position[1] + mtv[1])

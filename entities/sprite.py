@@ -1,7 +1,7 @@
 import pygame as pg
 
-import component as component
-import transform as transform
+import entities.component as component
+import entities.transform as transform
 
 class Sprite(component.Component):
     def __init__(self, surf : pg.Surface, screen : pg.Surface):
